@@ -1,0 +1,15 @@
+GoodMorning()
+{
+  echo "Good Morning"
+  echo "Today's date is"
+  date
+}
+
+
+
+TakeBackup()
+{
+  echo "Taking backup of /etc folder"
+  sleep 10
+  echo "Backup done"
+}

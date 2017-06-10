@@ -60,8 +60,19 @@ fi
 
 echo "Successfully created user $MYUSER !!!!"
 
+### Forcing user to change password after first login
 
+/usr/bin/chage -d 0 $MYUSER
 
+if [ $? -eq 0 ]; then
+ echo "$MYUSER has to change password after first login"
+fi
+###adding user to wheel group to give sudo permission
+echo "$MYUSER is going to be added to the wheel group "
+/usr/sbin/usermod -G  wheel $MYUSER
 
-
+if [ $? -eq 0  ]; then
+echo "$MYUSER created as  sudo user " 
+exit
+fi
 
