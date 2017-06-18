@@ -1,9 +1,9 @@
 #!/bin/bash
 ###################################
 # Purpose: To add user via script
-# Version: 1.0
+# Version:2.2
 # Owner  : info@tejoyasha.com
-# Input  : username
+# Input  : bala
 # Output : create the user if its not alreay exists
 ####################################
 
